@@ -1,4 +1,4 @@
-#FF1493
+
 # Getting Started
 
 These exercises lean on Test-Driven Development (TDD), but they're not an

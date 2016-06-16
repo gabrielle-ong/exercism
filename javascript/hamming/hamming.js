@@ -6,9 +6,9 @@ Hamming.prototype.compute = function (string1, string2) {
     throw Error('DNA strands must be of equal length.')
   }
   for (var i = 0; i < string1.length; i++) {
-    if (string1[i] !== string2[i]){
+    if (string1[i] !== string2[i]) {
       count += 1
     }
-  } return count;
+  } return count
 }
-module.exports = Hamming;
+module.exports = Hamming
