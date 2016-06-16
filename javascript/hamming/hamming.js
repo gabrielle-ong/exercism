@@ -1,9 +1,7 @@
 `use strict`
-
 var Hamming = function () {}
 
 Hamming.prototype.compute = function (string1, string2) {
-  count = 0
   if (string1.length !== string2.length) {
     throw Error('DNA strands must be of equal length.')
   }
