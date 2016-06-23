@@ -1,8 +1,9 @@
 function Words () {}
 
 Words.prototype.count = function (string) {
-  // //SOLUTION 1 - credits to @giftofjehovah
   var formattedArray = string.trim().toLowerCase().split(/\s+/)
+
+  // //SOLUTION 1 - credits to @giftofjehovah
   var expectedCount = formattedArray.reduce(function (previous, current) {
     previous.hasOwnProperty(current) ? previous[current]++ : previous[current] = 1
     return previous
