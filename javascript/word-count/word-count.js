@@ -1,13 +1,14 @@
 function Words () {}
 
 Words.prototype.count = function (string) {
+  // //SOLUTION 1 - credits to @giftofjehovah
   var formattedArray = string.trim().toLowerCase().split(/\s+/)
   var expectedCount = formattedArray.reduce(function (previous, current) {
     previous.hasOwnProperty(current) ? previous[current]++ : previous[current] = 1
     return previous
   }, {})
 
-  // // SOLUTION 2
+  // // SOLUTION 2 - credits to me!
   // var sortedArray = formattedArray.sort()
   // var expectedCount = {}
   //
@@ -19,7 +20,7 @@ Words.prototype.count = function (string) {
   //   }
   // }
 
-  // // SOLUTION 3 (WITHOUT SORTING)
+  // // SOLUTION 3 (WITHOUT SORTING) - credits to @fay2wk
   // var sortedArray = formattedArray.sort()
   // var expectedCount = {}
   //
