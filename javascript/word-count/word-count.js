@@ -21,20 +21,7 @@ Words.prototype.count = function (string) {
   //   }
   // }
 
-  // // SOLUTION 3 (WITHOUT SORTING) - credits to @fay2wk
-  // var sortedArray = formattedArray.sort()
-  // var expectedCount = {}
-  //
-  // for (var i = 0; i < sortedArray.length; i++) {
-  // var j = sortedArray[i]
-  //   if (expectedCount[j] == null) {
-  //     expectedCount[j] = 1
-  //   } else {
-  //       expectedCount[j]++
-  //   }
-  // }
-
-  // //SOLUTION 4 - credits to @redswift
+  // //SOLUTION 3 - credits to @redswift
   // // Take the first index and compare with all other index, then second index and compare with all other indexes ...
  //  var expectedCount = {}
  //  for (var i = 0; i < formattedArray.length; i++) {
