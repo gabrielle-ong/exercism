@@ -1,11 +1,8 @@
 class Pangram
   def self.is_pangram?(string)
-    formattedString = string.chars.sort.join.squeeze.downcase
-    # sort alphabetically, remove repeated letters, downcase
-    if formattedString.include? 'abcdefghijklmnopqrstuvwxyz'
-      true
-    else
-      false
-    end
+    # first downcase, then sort alphabetically, then remove repeated letters
+    formatted_string = string.downcase.chars.sort.join.squeeze
+
+    formatted_string.include? 'abcdefghijklmnopqrstuvwxyz'
   end
 end
